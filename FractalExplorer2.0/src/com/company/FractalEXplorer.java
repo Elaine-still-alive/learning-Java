@@ -122,7 +122,7 @@ public class FractalEXplorer {
                 System.out.println(saving);
                 if (saving==JFileChooser.APPROVE_OPTION){
                     File dir = chooser.getSelectedFile();
-                    if (!(dir.toPath().endsWith(".png"))){
+                    if (!(dir.toString().endsWith(".png"))){
                         dir = new File(dir + ".png");
                     }
                     try {
